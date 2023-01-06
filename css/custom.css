@@ -130,7 +130,7 @@
 #recent-posts > .recent-post-item {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
-  border-radius: 25px;
+  border-radius: 8px;
   border: var(--border-style);
 }
 
@@ -2120,4 +2120,19 @@ button#go-up:hover #percent {
     height: 40px;
     min-height: 40px;
   }
+}
+
+
+#random {
+  margin-left: 0px !important;
+}
+#random-banner {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  border-radius: 20px !important;
+}
+div#swiper_container {
+  width: 62% !important;
+  padding: 0px;
 }

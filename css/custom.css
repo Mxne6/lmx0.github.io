@@ -142,9 +142,6 @@
   border: var(--border-style);
 }
 
-#recent-post :hover{
-  border: 2px solid var(--lmx0-theme);
-}
 
 /* 文章页、归档页、普通页面 */
 div#post,
@@ -175,7 +172,6 @@ div#archive {
 [data-theme="dark"] div#page {
   background: var(--trans-dark);
 }
-
 
 
 /* 阅读模式 */

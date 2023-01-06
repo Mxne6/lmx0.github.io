@@ -130,7 +130,7 @@
 #recent-posts > .recent-post-item {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
-  border-radius: 8px;
+  border-radius: 18px;
   border: var(--border-style);
 }
 
@@ -2135,4 +2135,8 @@ button#go-up:hover #percent {
 div#swiper_container {
   width: 62% !important;
   padding: 0px;
+}
+
+.blog-slider__pagination {
+  right: 10px !important;
 }

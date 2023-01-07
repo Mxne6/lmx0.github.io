@@ -1440,7 +1440,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '\f0f3';
   font-size: 20px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -7421,9 +7421,9 @@ blockquote.pullquote.right {
 .hello-about {
   margin: 20px auto;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
+  background: var(--lmx0-card-bg);
   border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--lmx0-shadow-border);
   position: relative;
   overflow: hidden;
   user-select: none;
@@ -7433,7 +7433,7 @@ blockquote.pullquote.right {
   position: relative;
   height: 315px;
   width: 100%;
-  background: #6f42c1;
+  background: #2128bd;
   overflow: hidden;
 }
 
@@ -7480,7 +7480,7 @@ blockquote.pullquote.right {
   background: transparent;
 }
 [data-theme="dark"] .hello-about h1 {
-  color: var(--anzhiyu-white);
+  color: var(--lmx0-white);
 }
 
 .hello-about h1 {
@@ -7506,7 +7506,7 @@ blockquote.pullquote.right {
 
 .cursor {
   position: absolute;
-  background: #6f42c1;
+  background: #2128bd;
   width: 20px;
   height: 20px;
   margin: -10px 0 0 -10px;
@@ -7519,7 +7519,7 @@ blockquote.pullquote.right {
 
 ::selection {
   color: #fff;
-  background: #6f42c1;
+  background: #2128bd;
 }
 .site-card-group .site-card .info {
   margin-top: 0;
@@ -7630,10 +7630,10 @@ blockquote.pullquote.right {
 }
 
 .site-card-group .site-card:hover {
-  border-color: var(--anzhiyu-main) !important;
-  background-color: var(--anzhiyu-main) !important;
-  -webkit-box-shadow: var(--anzhiyu-shadow-theme) !important;
-  box-shadow: var(--anzhiyu-shadow-theme) !important;
+  border-color: var(--lmx0-main) !important;
+  background-color: var(--lmx0-main) !important;
+  -webkit-box-shadow: var(--lmx0-shadow-theme) !important;
+  box-shadow: var(--lmx0-shadow-theme) !important;
 }
 .site-card-group > a:hover .wrapper img {
   -webkit-transform: scale(1.2);
@@ -7793,7 +7793,7 @@ blockquote.pullquote.right {
   justify-content: center;
   height: 100%;
   width: 50px;
-  border: 2px solid #49b1f5;
+  border: 2px solid #425aef;
   border-left: 0;
   border-radius: 0 40px 40px 0;
 }
@@ -7805,7 +7805,7 @@ blockquote.pullquote.right {
   fill: var(--search-input-color);
 }
 #algolia-search .search-dialog .ais-SearchBox .ais-SearchBox-form button.ais-SearchBox-submit:hover svg path {
-  fill: #49b1f5;
+  fill: #425aef;
 }
 #algolia-search .search-dialog .ais-SearchBox .ais-SearchBox-form span.ais-SearchBox-loadingIndicator {
   position: absolute;
@@ -7861,7 +7861,7 @@ blockquote.pullquote.right {
   line-height: 24px;
 }
 #algolia-search .search-dialog .ais-Pagination .ais-Pagination-item--selected a {
-  background: #49b1f5;
+  background: #425aef;
   color: #eee;
   cursor: default;
   border-radius: 5px;
@@ -7936,7 +7936,7 @@ blockquote.pullquote.right {
 }
 #algolia-search .search-dialog #algolia-info .ais-PoweredBy-logo path:nth-child(2),
 #algolia-search .search-dialog #algolia-info .ais-PoweredBy-logo path:nth-child(4) {
-  fill: #49b1f5;
+  fill: #425aef;
 }
 @media screen and (max-width: 768px) {
   .apple #algolia-search #algolia-hits > div {

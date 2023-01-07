@@ -1,17 +1,17 @@
 #bbTimeList {
   background: var(--lmx0-white);
   color: var(--lmx0-fontcolor);
-  padding: .5rem 1rem;
-  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   box-shadow: var(--lmx0-shadow-lightblack);
   display: flex;
-  transition: all .3s ease 0s;
-  margin: 0.5rem auto 0.5rem 170px;
+  transition: all 0.3s ease 0s;
+  margin: 1rem auto 0;
+  margin-bottom: 1rem;
   border: var(--style-border);
   align-items: center;
   height: 50px;
-  width: 100%;
-  max-width: 1315px;
+  width: 80%;
 }
 [data-theme="dark"] #bbTimeList {
   background: #000 !important;

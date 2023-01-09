@@ -3162,7 +3162,7 @@ h1.page-title + .tag-cloud-list {
   color: #425aef;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
-  background: #425aef;
+  background: #00c4b6;
   color: #fff;
 }
 #aside-content :only-child > .card-widget {
@@ -6698,9 +6698,9 @@ blockquote.pullquote.right {
 #gitcalendar {
   margin: 0 auto;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
+  background: var(--lmx0-card-bg);
   border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--lmx0-shadow-border);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
@@ -6726,7 +6726,7 @@ blockquote.pullquote.right {
 }
 
 #web_bg ~ .page:has(#about-page) {
-  background: var(--anzhiyu-background);
+  background: var(--lmx0-background);
 }
 
 #about-page .author-box {
@@ -6752,7 +6752,7 @@ blockquote.pullquote.right {
   background: #6bdf8f;
   position: absolute;
   border-radius: 50%;
-  border: 6px solid var(--anzhiyu-background);
+  border: 6px solid var(--lmx0-background);
   top: 50%;
   left: 50%;
   transform: translate(35px, 45px);
@@ -6770,7 +6770,7 @@ blockquote.pullquote.right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--anzhiyu-white);
+  color: var(--lmx0-white);
   background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
@@ -6780,9 +6780,9 @@ blockquote.pullquote.right {
 .author-content-item {
   width: 49%;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
+  background: var(--lmx0-card-bg);
   border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--lmx0-shadow-border);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
@@ -6865,37 +6865,21 @@ blockquote.pullquote.right {
 .aboutsiteTips .mask span:nth-child(4) {
   background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
 }
-
-.author-content-item .card-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-}
-
-.author-content-item .card-content .author-content-item-title {
-  margin-bottom: 0.5rem;
-}
-.author-content-item .author-content-item-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1;
+@media screen and (max-width: 768px) {
+  .author-content-item.map {
+    margin-bottom: 0;
+  }
 }
 
 .post-tips {
-  color: var(--anzhiyu-gray);
+  color: var(--lmx0-gray);
   font-size: 14px;
   position: absolute;
   bottom: 1rem;
   left: 2rem;
 }
 .post-tips a {
-  color: var(--anzhiyu-gray) !important;
+  color: var(--lmx0-gray) !important;
   border: none !important;
 }
 .author-content-item .card-content .banner-button-group {
@@ -6908,7 +6892,7 @@ blockquote.pullquote.right {
   width: 124px;
   border-radius: 20px;
   justify-content: center;
-  background: var(--anzhiyu-card-bg);
+  background: var(--lmx0-card-bg);
   color: var(--font-color);
   display: flex;
   align-items: center;
@@ -6926,8 +6910,8 @@ blockquote.pullquote.right {
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
-  background: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background: var(--lmx0-main);
+  color: var(--lmx0-white);
   border-radius: 20px !important;
 }
 .author-content-item.personalities {
@@ -6981,11 +6965,41 @@ blockquote.pullquote.right {
   line-height: 1.1;
 }
 
+.author-content-item.map {
+  background: url(https://s1.vika.cn/space/2023/01/09/1e7d4fe256964d2297f3cd921bc13e74) no-repeat center;
+  min-height: 160px;
+  max-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  height: 60%;
+  background-size: 100%;
+  transition: 1s ease-in-out;
+}
+[data-theme="dark"] .author-content-item.map {
+  background: url(https://s1.vika.cn/space/2023/01/09/1e7d4fe256964d2297f3cd921bc13e74) no-repeat center;
+  background-size: 100%;
+}
+
 .author-content-item.single {
   width: 100%;
 }
 
-
+.author-content-item.map .map-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--lmx0-maskbg);
+  padding: 0.5rem 2rem;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: 1s ease-in-out;
+  font-size: 20px;
+}
+.author-content-item.map .map-title b {
+  color: var(--font-color);
+}
 .author-content-item.selfInfo {
   display: flex;
   min-height: 100px;
@@ -6994,7 +7008,7 @@ blockquote.pullquote.right {
   align-items: center;
   flex-wrap: wrap;
   height: -webkit-fill-available;
-  height: 40%;
+  /* height: 20%; */
 }
 .author-content-item.selfInfo div {
   display: flex;
@@ -7012,7 +7026,23 @@ blockquote.pullquote.right {
   font-size: 34px;
   line-height: 1;
 }
+.author-content-item-group.column.mapAndInfo {
+  width: 59%;
+}
 
+.author-content-item.map{
+  height: 250px;
+}
+
+.author-content-item.map:hover {
+  background-size: 120%;
+  transition: 4s ease-in-out;
+  background-position-x: 0;
+  background-position-y: 36%;
+}
+.author-content-item.map:hover .map-title {
+  bottom: -100%;
+}
 .author-content-item-group.column {
   display: flex;
   flex-direction: column;
@@ -7021,12 +7051,12 @@ blockquote.pullquote.right {
 }
 
 .post-tips a:hover {
-  color: var(--anzhiyu-main) !important;
+  color: var(--lmx0-main) !important;
   background: none !important;
 }
 
 .author-content-item.single.reward .reward-list-updateDate {
-  color: var(--anzhiyu-gray);
+  color: var(--lmx0-gray);
   font-size: 14px;
 }
 
@@ -7226,7 +7256,7 @@ blockquote.pullquote.right {
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(120deg, #ff27e8 0, #ff8000 100%);
-  color: var(--anzhiyu-white);
+  color: var(--lmx0-white);
   background-size: 200%;
   animation: gradient 15s ease infinite;
   min-height: 200px;
@@ -7269,8 +7299,29 @@ blockquote.pullquote.right {
   margin-right: 0.5rem;
 }
 
-.author-content-item.comic-content::after {
-  box-shadow: 0 -48px 203px 11px #fbe9b8 inset;
+.author-content-item.like-technology {
+  background: url(https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp) no-repeat;
+  background-size: cover;
+  min-height: 230px;
+  color: var(--lmx0-white);
+}
+
+.author-content-item.like-music {
+  background: url(https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg) no-repeat top;
+  background-size: cover;
+  min-height: 400px;
+  color: var(--lmx0-white);
+  overflow: hidden;
+}
+
+.author-content-item .card-content .banner-button-group {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+
+.author-content-item.like-music::after {
+  box-shadow: 0 -69px 203px 11px #453e38 inset;
   position: absolute;
   content: "";
   width: 100%;
@@ -7279,25 +7330,19 @@ blockquote.pullquote.right {
   left: 0;
 }
 
-
-.author-content-item .card-content .banner-button-group {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 2rem;
-}
-
-
 @media screen and (max-width: 768px) {
   #gitcalendar {
     display: none;
   }
   [data-theme="dark"] .author-content-item .card-content .banner-button-group .banner-button {
-    color: var(--anzhiyu-black) !important;
+    color: var(--lmx0-black) !important;
   }
   .author-content-item .card-content .banner-button-group .banner-button:hover {
     background: none !important;
   }
-
+  .author-content-item.game-yuanshen .content-bottom {
+    padding-bottom: 10px;
+  }
   .author-content {
     margin-top: 0;
   }
@@ -7306,7 +7351,9 @@ blockquote.pullquote.right {
     margin-top: 1rem;
     padding: 1rem;
   }
-
+  .author-content-item.map {
+    margin-bottom: 0;
+  }
   .author-content-item-group.column {
     width: 100% !important;
   }
@@ -7335,7 +7382,7 @@ blockquote.pullquote.right {
     /* border-radius: 0; */
     padding: 0 1rem !important;
     box-shadow: none !important;
-    background: var(--anzhiyu-background);
+    background: var(--lmx0-background);
   }
   .author-content-item .card-content .banner-button-group .banner-button-text {
     display: none;
@@ -7357,14 +7404,19 @@ blockquote.pullquote.right {
     margin-left: 80px;
   }
   .author-content-item .card-content .banner-button-group .banner-button:hover i {
-    background: var(--anzhiyu-background) !important;
-    color: var(--anzhiyu-theme);
+    background: var(--lmx0-background) !important;
+    color: var(--lmx0-theme);
   }
   #selfInfo-content-year {
     width: 90px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 896px) {
+  .author-content-item.like-music .content-bottom .tips {
+    display: none;
+  }
+}
 
 /* 赞赏的css */
 
@@ -7384,7 +7436,7 @@ blockquote.pullquote.right {
   border: var(--style-border-always);
   width: calc((100% / 3) - 0.5rem);
   margin: 0 0.25rem 0.5rem 0.25rem;
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--lmx0-shadow-border);
 }
 
 .reward-list-item .reward-list-item-name {
@@ -7413,7 +7465,7 @@ blockquote.pullquote.right {
 
 .reward-list-item .reward-list-item-time {
   font-size: 12px;
-  color: var(--anzhiyu-secondtext);
+  color: var(--lmx0-secondtext);
   white-space: nowrap;
 }
 .hello-about {

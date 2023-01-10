@@ -187,23 +187,18 @@ div#archive {
 
 /* loading加载图片 */
 .loading-img {
-  background: url(https://s1.vika.cn/space/2023/01/08/ccf7921738f741dbbd0a261c4b8fce1c) no-repeat center center;
+  background: url(data:application/octet-stream;base64,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) no-repeat center center;
   background-size: cover;
 }
 
-/* 字体 */
+/* 字体
 @font-face {
-  /* 为载入的字体取名字(随意) */
   font-family: 'zdy';	
-  /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/霞鹜文楷.woff2);
-  /* 定义加粗样式(加粗多少) */
+  src: url(/font/fa-brands-400.woff2);
   font-weight: normal;
-  /* 定义字体样式(斜体/非斜体) */
   font-style: normal;
-  /* 定义显示样式 */
   font-display: block;
-}
+} */
 
 /* 搜索背景模糊 */
 #search-mask {
@@ -1180,6 +1175,24 @@ svg.icon {
   #aside-content .card-tag-cloud a:active {
       transform: scale(.97)
   }
+}
+
+/* 标签页面 */
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  margin: 5px;
 }
 
 /* 文章中的加粗文本颜色 */
@@ -2288,59 +2301,6 @@ button#go-up:hover #percent {
   border: var(--style-border-always);
   background: var(--lmx0-secondbg);
 }
-#bber .aplayer {
-  margin: 0;
-}
-
-#bber .aplayer.aplayer-withlrc .aplayer-pic {
-  height: 82px;
-  width: 82px;
-  margin: 4px;
-  border-radius: 4px;
-}
-.bber-music .aplayer.aplayer-withlrc .aplayer-info {
-  padding: 5px 7px 0;
-}
-#bber .aplayer .aplayer-info .aplayer-music {
-  height: 23px;
-}
-#bber .aplayer .aplayer-info .aplayer-music .aplayer-title {
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--lmx0-fontcolor);
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller {
-  align-items: center;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
-  padding: 0;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {
-  position: initial;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
-  background: var(--lmx0-gray);
-  height: 8px;
-  border-radius: 12px;
-  transition: 0.3s;
-  overflow: hidden;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
-  height: 100%;
-  border-radius: 12px;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-  height: 100%;
-  border-radius: 12px;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
-  display: none;
-}
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {
-  position: initial;
-}
 
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
@@ -2372,15 +2332,6 @@ button#go-up:hover #percent {
     width: 100%;
     margin-right: 0px;
   }
-}
-[data-theme="dark"] #bber .bber-music .aplayer,
-[data-theme="dark"] #bber .aplayer .aplayer-lrc:before,
-[data-theme="dark"] #bber .aplayer .aplayer-lrc:after {
-  background: var(--lmx0-card-bg);
-  color: var(--lmx0-fontcolor);
-}
-#bber .aplayer .aplayer-lrc p {
-  color: var(--lmx0-fontcolor);
 }
 /* 即刻短文页面 end------*/
 

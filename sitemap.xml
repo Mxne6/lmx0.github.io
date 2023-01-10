@@ -374,13 +374,6 @@
   </url>
   
   <url>
-    <loc>http://lmx0.top/tags/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2023-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://lmx0.top/tags/CSS/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -389,6 +382,13 @@
   
   <url>
     <loc>http://lmx0.top/tags/CSS%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
+    <lastmod>2023-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lmx0.top/tags/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -432,14 +432,14 @@
   </url>
   
   <url>
-    <loc>http://lmx0.top/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>http://lmx0.top/categories/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://lmx0.top/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>http://lmx0.top/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

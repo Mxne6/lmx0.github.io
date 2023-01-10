@@ -228,13 +228,9 @@ setInterval(() => {
   var nol = function(h) {
       return h > 9 ? h : '0' + h;
   }
-  if (second >= 365 * 24 * 3600) {
-      time[0] = parseInt(second / (365 * 24 * 3600));
-      second %= 365 * 24 * 3600;
-  }
-  if (second >= 24 * 3600) {
-      time[1] = parseInt(second / (24 * 3600));
-      second %= 24 * 3600;
+  if (second >= 86400) {
+      time[1] = parseInt(second / 86400);
+      second %= 86400;
   }
   if (second >= 3600) {
       time[2] = nol(parseInt(second / 3600));
@@ -248,9 +244,6 @@ setInterval(() => {
       time[4] = nol(second);
   }
   let currentTimeHtml = ""
-  if (time[0] != 0) {
-      currentTimeHtml += time[0] + ' YEAR '
-  }
   currentTimeHtml += "本站已运行：" + time[1] + ' 天 ' + time[2] + ' 时 ' + time[3] + ' 分 ' + time[4] + ' 秒';
   document.getElementById("runtime").innerHTML = currentTimeHtml;
 }, 1000);

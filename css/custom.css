@@ -2982,7 +2982,7 @@ a.categoryButton:hover {
       transform: translateX(-50%)
   }
 }
-
+/* 右边海报样式 */
 @media screen and (min-width: 1300px) {
   .topGroup {
     display: flex;

@@ -3724,3 +3724,134 @@ a.categoryButton:hover {
 .relatedPosts>.relatedPosts-list>div {
   border-radius: 10px;
 }
+
+
+
+.topGroup {
+  display: flex;
+}
+.topGroup .todayCard {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .topGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: calc(328px + 0.5rem);
+    align-content: space-between;
+    width: calc(600px + 1.5rem);
+    position: relative;
+  }
+  .topGroup .todayCard {
+    position: absolute;
+    width: calc(600px + 1rem);
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .topGroup .todayCard::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .topGroup .todayCard.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .topGroup .todayCard .todayCard-info {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 2;
+    color: var(--lmx0-white);
+    max-width: 60%;
+    transition: 0.3s;
+  }
+
+  .topGroup .todayCard.hide .todayCard-info {
+    bottom: 1rem;
+    opacity: 0;
+  }
+
+  .topGroup .todayCard .todayCard-info .todayCard-tips {
+    opacity: 0.8;
+    font-size: 0.6rem;
+  }
+
+  .topGroup .todayCard .todayCard-info .todayCard-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .topGroup .banner-button-group {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .topGroup .todayCard.hide .banner-button-group {
+    bottom: 1rem;
+  }
+
+  .topGroup .banner-button {
+    background: red !important;
+    border-radius: 20px;
+    color: var(--lmx0-white);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 40px;
+    width: 124px;
+    justify-content: center;
+  }
+
+  .topGroup .banner-button:hover {
+    background: var(--lmx0-theme) !important;
+    color: var(--lmx0-white);
+  }
+
+  .topGroup .banner-button i {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
+  .topGroup .todayCard .todayCard-cover {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  .topGroup .todayCard.hide .todayCard-cover {
+    transform: scale(1.2);
+  }
+}

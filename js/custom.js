@@ -304,3 +304,8 @@ addRightMenuClickEvent();
 
 
 
+function hideTodayCard () {
+  if (document.getElementById("todayCard")) {
+    document.getElementById("todayCard").classList.add('hide');
+  }
+}

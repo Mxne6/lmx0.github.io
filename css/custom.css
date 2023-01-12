@@ -3726,7 +3726,7 @@ a.categoryButton:hover {
 }
 
 
-@media screen and (min-width: 1300px) {
+/* @media screen and (min-width: 1300px) {
   .topGroup {
     display: flex;
     flex-direction: row;
@@ -3846,4 +3846,4 @@ a.categoryButton:hover {
   .topGroup .todayCard.hide .todayCard-cover {
     transform: scale(1.2);
   }
-}
+} */

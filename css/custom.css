@@ -3726,14 +3726,6 @@ a.categoryButton:hover {
 }
 
 
-
-.topGroup {
-  display: flex;
-}
-.topGroup .todayCard {
-  display: none;
-}
-
 @media screen and (min-width: 1300px) {
   .topGroup {
     display: flex;

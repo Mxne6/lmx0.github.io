@@ -126,30 +126,6 @@ var lmx0 = {
   },
 };
 
-// 导航栏
-// 返回顶部 显示网页阅读进度
-window.onscroll = percent; // 执行函数
-// 页面百分比
-function percent() {
-  let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度
-    b =
-      Math.max(
-        document.body.scrollHeight,
-        document.documentElement.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.offsetHeight,
-        document.body.clientHeight,
-        document.documentElement.clientHeight
-      ) - document.documentElement.clientHeight, // 整个网页高度 减去 可视高度
-    result = Math.round((a / b) * 100), // 计算百分比
-    btn = document.querySelector("#percent"); // 获取图标
-
-  result <= 99 || (result = 99), (btn.innerHTML = result);
-}
-document.getElementById("page-name").innerText = document.title.split(" | lmx0")[0];
-
-
-
 lmx0.changeTimeInEssay();
 lmx0.reflashEssayWaterFall();
 lmx0.initIndexEssay();
@@ -164,8 +140,6 @@ function switchCommentBarrage () {
   // 本地缓存一天，刷新或切换页面时仍 隐藏或显示 热评。
   window.localStorage.setItem('commentBarrageDisplay', flag === 'false' ? 'undefined' : 'false', 86400000)
 }
-
-
 
 
 //分类条 start
@@ -327,3 +301,6 @@ var lmx0 = {
 
 addRightMenuClickEvent();
 // music end-----------
+
+
+

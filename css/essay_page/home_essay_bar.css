@@ -89,3 +89,13 @@
     transform: rotate(-1turn);
   }
 }
+
+
+
+@media screen and (max-width: 768px) {
+  #bbTimeList {
+    width: 92% !important;
+    /* background-color: transparent; */
+    border: none;
+  }
+}

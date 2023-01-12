@@ -255,7 +255,7 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "ZhuZiAYuanJWD";
+    font-weight: 700;
   }
   .nav-fixed.nav-visible #name-container {
     transition: 0.3s;

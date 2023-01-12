@@ -876,11 +876,12 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
   .tk-submit .el-button--primary {
     width: 5rem;
     height: 132px;
-    top: -161px;
+    top: -127px;
+    height:111px;
   }
 
   .tk-row-actions-start {
-    top: -210px;
+    top: -170px;
   }
 }
 
@@ -1584,6 +1585,10 @@ li.tree-list-item {
   .item-headline {
       display: none
   }
+  .business-center {
+    /* 手机端取消文章底部银行卡片 */
+    display: none; 
+  }
 }
 
 
@@ -1993,11 +1998,6 @@ button#go-up:hover #percent {
   margin: 0 0 1.5rem 0;
   border-radius: 1rem;
   background: var(--lmx0-background);
-  -webkit-box-align: normal;
-  -moz-box-align: normal;
-  -o-box-align: normal;
-  -ms-flex-align: normal;
-  -webkit-align-items: normal;
   align-items: normal;
 }
 .article-sort .article-sort-item .article-sort-item-img {
@@ -2077,7 +2077,23 @@ button#go-up:hover #percent {
   height: 2rem;
   width: 2rem;
 }
+@media screen and (max-width: 768px){
+  .article-sort-item {
+    width: 100% !important;
+
+  }
+  .article-sort-item-categories {
+    display: none;
+  }
+  .article-sort-item-title {
+    height: 3.7em !important;
+  }
+  .article-sort-item-time {
+    display:none;
+  }
+}
 /* achieve页面 end */
+
 
 
 /* 即刻短文页面 start------*/
@@ -2643,7 +2659,9 @@ a.categoryButton i {
   max-height: 164px;
   overflow: hidden;
   position: relative;
+  height:100%;
 }
+
 }
 
 .topGroup {
@@ -3098,7 +3116,9 @@ a.categoryButton:hover {
 
 @media screen and (max-width: 768px){
   #category-bar{
-    border-radius: 0;
+    border-radius: 10px;
+    /* background-color: transparent; */
+    margin-top: 10px;
   }
 }
 
@@ -3364,33 +3384,14 @@ a.categoryButton:hover {
   z-index: 1919810;
 }
 [data-theme="light"] #fps{
-  background-color: var(--lmx0-white);
+  background-color: transparent;
   padding: 4px;
-  border-radius: 4px;
 }
 [data-theme="dark"] #fps{
-  background-color: var(--lmx0-black);
+  background-color: transparent;
   padding: 4px;
-  border-radius: 4px;
 }
 /* 帧率检测 end */
-
-
-
-
-/* .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-  left: -66px !important;
-  transition: all 0.3s;
-}
-
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-  left: 0 !important;
-  transition: all 0.3s;
-}
-
-.aplayer.aplayer-fixed {
-  z-index: 999999 !important;
-} */
 
 
 /* 音乐播放器 start------------*/
@@ -3708,3 +3709,18 @@ a.categoryButton:hover {
   color: #ffffffb3;
 }
 /* 音乐播放器 end------------*/
+
+
+/* 右侧按钮 显示最前端 */
+#rightside {
+  position: fixed;
+  z-index: 999;
+}
+/* 文章页面上一篇下一篇 */
+#pagination.pagination-post {
+  border-radius: 10px;
+}
+/* 文章页面推荐 */
+.relatedPosts>.relatedPosts-list>div {
+  border-radius: 10px;
+}

@@ -1,27 +1,4 @@
-#bbTimeList {
-  background: var(--lmx0-white);
-  color: var(--lmx0-fontcolor);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  box-shadow: var(--lmx0-shadow-lightblack);
-  display: flex;
-  transition: all 0.3s ease 0s;
-  margin: 1rem auto 0;
-  margin-bottom: 1rem;
-  border: var(--style-border);
-  align-items: center;
-  height: 50px;
-  width: 80%;
-}
-[data-theme="dark"] #bbTimeList {
-  background: #000 !important;
-}
-#bbtalk {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+/* 主页哔哔bb */
 #bber-talk {
   width: 100%;
   height: 25px;
@@ -29,34 +6,58 @@
   display: flex;
   flex-direction: column;
 }
-.bber-logo {
-  font-size: 1.5rem;
-  line-height: 22px;
-  margin-right: 1rem;
-  transition: all 0.3s ease 0s;
-  /* cursor: url(/img/x2.cur), auto !important; */
-}
 
-.bber-gotobb {
-  line-height: 25px;
-  margin-left: 1rem;
-  transition: all 0.3s ease 0s;
-  font-size: 25px;
-  /* cursor: url(/img/x2.cur), auto !important; */
+#bbtalk {
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #bber-talk .li-style {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   height: 25px;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: 0.3s;
-  font-weight: 700;
+  font-weight: bold;
   margin: auto;
-  /* cursor: url(/img/x2.cur), auto !important; */
+  cursor: pointer;
   white-space: nowrap;
+}
+
+#bbTimeList .li-style:hover {
+  color: var(--lmx0-theme);
+  transition: 0.3s;
+}
+
+ul,
+li {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#bbTimeList {
+  background: var(--lmx0-none);
+  color: var(--lmx0-fontcolor);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: var(--lmx0-shadow-lightblack);
+  display: flex;
+  transition: 0.3s;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border: var(--style-border);
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  width: 100%;
+  max-width: 1350px;
 }
 
 #bbTimeList:hover {
@@ -64,36 +65,15 @@
   box-shadow: var(--lmx0-shadow-main);
 }
 
-/* 文章页H1-H6图标样式效果 */
-.bbTimeList .bber-logo {
-  -webkit-animation: rotate 1.6s linear infinite;
-  animation: rotate 1.6s linear infinite;
-}
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-1turn);
-    transform: rotate(-1turn);
-  }
-}
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-1turn);
-    transform: rotate(-1turn);
+@media screen and (min-width: 1300px) {
+  #bbTimeList {
+    margin-bottom: .5rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  #bbTimeList {
-    width: 92% !important;
-    /* background-color: transparent; */
-    border: none;
-  }
+
+
+
+.bbTimeList .bber-logo {
+  animation: rotate 1.6s linear infinite;
 }

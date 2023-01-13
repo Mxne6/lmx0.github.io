@@ -114,10 +114,10 @@
 }
 
 
-#content-inner {
-  /* max-width: 1400px !important;  */
+/* #content-inner {
+  max-width: 1400px !important; 
   margin-right: 93px !important;
-}
+} */
 
 /* 网站背景色 */
 #body-wrap {
@@ -428,6 +428,7 @@ div#archive {
   color: var(--lmx0-fontcolor) !important;
   /* 底部背景色 */
   background: var(--lmx0-background); 
+  margin-bottom: -10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1303,12 +1304,12 @@ blockquote{
 }
 
 #aside-content {
-  width: 300px;
+  width: 300px !important;
 }
 
 @media screen and (max-width: 1300px) {
   #aside-content {
-    width: 300px;
+    width: 300px !important;
   }
 }
 
@@ -1499,7 +1500,7 @@ li.card-archive-list-item {
 /* 侧边栏配置 */
 @media screen and (min-width: 1300px) {
   #aside-content {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
 
   #aside-content .sticky_layout {
@@ -1712,14 +1713,24 @@ svg.icon.faa-tada {
 
 
 /* 全局宽度 */
-.layout {
-  max-width: 1450px !important;
-}
+
 
 /* 侧边卡片栏宽度 */
-.aside-content {
-  max-width: 318px;
-  min-width: 300px;
+#aside-content {
+  width: 300px;
+  padding-left: 0rem;
+}
+
+@media screen and (max-width: 1300px) {
+  #aside-content {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #aside-content {
+    display: none;
+  }
 }
 
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
@@ -2394,11 +2405,11 @@ button#go-up:hover #percent {
 /* home_top 首页顶部 start */
 #home_top {
   max-width: 1400px;
-  margin: .5rem auto -1rem; /*上边 | 左边右边 | 下边 */ 
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: -1.5rem;
   padding: 0 1.5rem;
-  width: 100%
 }
-
 @media screen and (max-width: 768px) {
   #home_top {
       padding:0;
@@ -2998,7 +3009,7 @@ a.categoryButton:hover {
   }
   .topGroup .todayCard {
     position: absolute;
-    width: calc(600px + 1rem);
+    width: calc(600px + 1.5rem);
     height: 100%;
     z-index: 1;
     top: 0;
@@ -3229,6 +3240,7 @@ a.categoryButton:hover {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: 1rem;
+  margin-right: 0.5rem;
   border: var(--style-border);
   width: 100%;
 }
@@ -3892,12 +3904,21 @@ a.categoryButton:hover {
   font-weight: 700;
 }
 
-
-
-
-
 /* 文章页面顶图 */
 #page-header.post-bg:before {
   background: rgb(0,0,0,0.25);
 }
 
+
+/* 网页最大宽度 */
+.layout.hide-aside {
+  max-width: 1400px;
+}
+.layout#content-inner {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.layout > div:first-child {
+  width: 78%;
+}

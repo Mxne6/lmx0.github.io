@@ -3922,3 +3922,9 @@ a.categoryButton:hover {
 .layout > div:first-child {
   width: 78%;
 }
+
+.hexo-douban-active {
+  background: var(--lmx0-theme) !important;
+  color: var(--lmx0-white);
+  border-radius: 8px !important;
+}

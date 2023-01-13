@@ -71,9 +71,11 @@ li {
   }
 }
 
-
-
-
 .bbTimeList .bber-logo {
   animation: rotate 1.6s linear infinite;
+  cursor: pointer;
+}
+
+.bber-gotobb {
+  cursor: pointer;
 }

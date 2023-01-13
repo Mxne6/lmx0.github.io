@@ -28,3 +28,40 @@ function addIcon(a, n) {
     let div = a.getElementsByClassName('flink-item-name')[0]
     div.innerHTML += icon
 }
+
+
+
+
+// 封面纯色
+function coverColor() {
+    var path = document.getElementById("post-cover")?.src;
+    if (path !== undefined) {
+        RGBaster.colors(path, {
+            paletteSize: 30,
+            exclude: ["rgb(255,255,255)", "rgb(0,0,0)", "rgb(254,254,254)"],
+            success: function (t) {
+                if (t.dominant != 'rgb(66,90,239)') {
+                    const c = t.dominant.match(/\d+/g);
+                    var value = `rgb(${c[0]},${c[1]},${c[2]})`;
+                    if (getContrastYIQ(colorHex(value)) == "light") {
+                        value = LightenDarkenColor(colorHex(value), -40)
+                    }
+                    document.styleSheets[0].addRule(':root', '--Jay-main:' + value + '!important');
+                    document.styleSheets[0].addRule(':root', '--Jay-main-op:' + value + '23!important');
+                    document.styleSheets[0].addRule(':root', '--Jay-main-op-deep:' + value + 'dd!important');
+                    document.styleSheets[0].addRule(':root', '--Jay-main-none:' + value + '00!important');
+                    Jay.initThemeColor()
+                    document.getElementById("coverdiv").classList.add("loaded");
+                }
+            }
+        });
+
+    } else {
+        document.styleSheets[0].addRule(':root', '--Jay-main: var(--Jay-theme)!important');
+        document.styleSheets[0].addRule(':root', '--Jay-main-op: var(--Jay-theme-op)!important');
+        document.styleSheets[0].addRule(':root', '--Jay-main-op-deep:var(--Jay-theme-op-deep)!important');
+        document.styleSheets[0].addRule(':root', '--Jay-main-none: var(--Jay-theme-none)!important');
+        Jay.initThemeColor()
+    }
+}
+

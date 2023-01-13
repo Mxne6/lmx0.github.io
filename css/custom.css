@@ -2405,6 +2405,9 @@ button#go-up:hover #percent {
       padding:0;
       margin-top: 0
   }
+  .todayCard {
+    display: none;
+  }
 }
 
 .recent-top-post-group {

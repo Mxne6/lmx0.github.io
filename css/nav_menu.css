@@ -361,6 +361,7 @@ center#name-container {
 }
 .back-home-button .back-menu-list-groups {
   position: absolute;
+  z-index:10000;
   top: 65px;
   left: 0;
   background: var(--lmx0-card-bg);
@@ -385,8 +386,12 @@ center#name-container {
 }
 .back-home-button .back-menu-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 340px;
+  justify-content: space-between
 }
+
 .back-home-button .back-menu-list::before {
   position: absolute;
   top: -22px;
@@ -394,6 +399,10 @@ center#name-container {
   width: 100%;
   height: 25px;
   content: "";
+}
+
+.back-home-button .back-menu-list-groups .back-menu-list-group:last-child .back-menu-list {
+  margin: 0 0 8px
 }
 
 .back-home-button .back-menu-list-group:hover .back-menu-list-title {
@@ -409,6 +418,7 @@ center#name-container {
   padding: 4px 8px !important;
   transition: 0.3s;
   border-radius: 8px;
+  width: 150px;
 }
 .back-home-button .back-menu-list .back-menu-item .back-menu-item-text {
   font-size: var(--global-font-size);
@@ -421,7 +431,6 @@ center#name-container {
   height: 60px;
   display: flex;
   align-items: center;
-  /* z-index: 102; */
   transition: 0.3s;
   margin-left: 20px;
 }
@@ -616,7 +625,7 @@ center#name-container {
   border-radius: 8px;
 }
 
-/* 手机端侧边菜单栏取消hr */
+/* 手机端侧边菜单栏hr */
 #sidebar #sidebar-menus hr {
   color: var(--lmx0-theme);
 }

@@ -133,13 +133,15 @@ lmx0.changeTimeInEssay();
 lmx0.reflashEssayWaterFall();
 
 
-// 切换热评
+切换热评
 function switchCommentBarrage () {
   let flag = window.localStorage.getItem('commentBarrageDisplay') // undefined || false
   document.getElementById('comment-barrage').style.display = flag === 'false' ? 'block' : 'none'
   // 本地缓存一天，刷新或切换页面时仍 隐藏或显示 热评。
   window.localStorage.setItem('commentBarrageDisplay', flag === 'false' ? 'undefined' : 'false', 86400000)
 }
+
+
 
 
 //分类条 start
@@ -238,6 +240,12 @@ function switchDarkMode() {
 }
 
 
+function hideTodayCard () {
+  if (document.getElementById("todayCard")) {
+    document.getElementById("todayCard").classList.add('hide');
+  }
+}
+
 // music start------
 var lmx0_musicPlaying = false;
 var lmx0_musicFirst = false;
@@ -299,13 +307,5 @@ var lmx0 = {
   },
 };
 
-addRightMenuClickEvent();
+// addRightMenuClickEvent();
 // music end-----------
-
-
-
-function hideTodayCard () {
-  if (document.getElementById("todayCard")) {
-    document.getElementById("todayCard").classList.add('hide');
-  }
-}

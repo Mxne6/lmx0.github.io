@@ -607,7 +607,6 @@ center#name-container {
   list-style: none
 }
 
-
 #sidebar #sidebar-menus .menus_items .site-page {
   position: relative;
   display: block;
@@ -617,8 +616,7 @@ center#name-container {
   border-radius: 8px;
 }
 
-
+/* 手机端侧边菜单栏取消hr */
 #sidebar #sidebar-menus hr {
   color: var(--lmx0-theme);
-
 }

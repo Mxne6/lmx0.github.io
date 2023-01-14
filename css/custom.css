@@ -423,6 +423,11 @@ div#archive {
   border-radius: 30px;
   color: var(--lmx0-fontcolor);
 }
+
+#footer-wrap a:hover {
+  color: var(--lmx0-theme);
+}
+
 #footer-wrap {
   padding: 20px 20px;
   color: var(--lmx0-fontcolor) !important;
@@ -1682,6 +1687,12 @@ svg.icon.faa-tada {
 }
 .bangumi-info-item em {
   color: #f2b94b;
+}
+/* 豆瓣页面 顶部按钮 */
+.hexo-douban-active {
+  background: var(--lmx0-theme) !important;
+  color: var(--lmx0-white);
+  border-radius: 8px !important;
 }
 
 
@@ -3043,7 +3054,7 @@ a.categoryButton:hover {
     bottom: 2rem;
     left: 2rem;
     z-index: 2;
-    color: var(--lmx0-white);
+    color: rgb(249, 161, 59);
     max-width: 60%;
     transition: 0.3s;
   }
@@ -3079,7 +3090,7 @@ a.categoryButton:hover {
   .topGroup .banner-button {
     background: red !important;
     border-radius: 20px;
-    color: var(--lmx0-white);
+    color: rgb(254 200 129);
     display: flex;
     align-items: center;
     z-index: 1;
@@ -3318,6 +3329,11 @@ a.categoryButton:hover {
   color: var(--lmx0-fontcolor);
   margin-left: 1rem;
   font-weight: bold;
+}
+
+/* 分类条长度 */
+.layout > div:first-child {
+  width: 78%;
 }
 /* 首页分类条展示 end */
 
@@ -3909,7 +3925,6 @@ a.categoryButton:hover {
   background: rgb(0,0,0,0.25);
 }
 
-
 /* 网页最大宽度 */
 .layout.hide-aside {
   max-width: 1400px;
@@ -3919,12 +3934,4 @@ a.categoryButton:hover {
   width: 100%;
 }
 
-.layout > div:first-child {
-  width: 78%;
-}
 
-.hexo-douban-active {
-  background: var(--lmx0-theme) !important;
-  color: var(--lmx0-white);
-  border-radius: 8px !important;
-}

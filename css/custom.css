@@ -2304,11 +2304,12 @@ button#go-up:hover #percent {
 
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
-  height: 19rem;
-  background: url(https://s1.vika.cn/space/2023/01/03/7d35d8395d744367b5111a3dffba1826) left 28% / cover no-repeat;
+  height: 16rem;
+  background: url(https://s1.vika.cn/space/2023/01/15/efbe9db9262d452a8ad837eeca6a7130) left 50% / cover no-repeat;
   color: var(--lmx0-white);
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: -17px;
+  background-size:100% 300%;
 }
 .banner-button-group .banner-button{
   color: var(--lmx0-fontcolor);
@@ -2318,6 +2319,19 @@ button#go-up:hover #percent {
   color: var(--lmx0-white);
   background: var(--lmx0-theme) !important;
   border-radius: 20px !important;
+}
+
+#essay_page  .author-content-item-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+#essay_page .content-bottom .tips {
+  margin-bottom: -225px;
+}
+
+.author-content-item .author-content-item-tips {
+  margin-bottom: -0.5rem;
+  margin-top: 10px;
 }
 
 /* 响应式 */

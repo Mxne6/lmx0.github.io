@@ -1267,7 +1267,7 @@ b, strong {
 }
 /* markdown引用 */
 blockquote{
-  padding:15px 0px 1px 20px;
+  padding:15px 0px 15px 20px;
 }
 
 /* 文章页侧边栏固定位置 */
@@ -4222,4 +4222,8 @@ li{
 
 #posts-chart {
   margin: 0 auto !important;
+}
+
+div#menus {
+  z-index: 999;
 }

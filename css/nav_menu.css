@@ -1,11 +1,17 @@
 #page-header.not-top-img #nav {
   transition: 0.3s;
-  background: var(--lmx0-card-bg);
+  background-color: #f7f9fe;
+  border-bottom: var(--style-border);
+  box-shadow: none !important;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   #page-header.not-top-img #nav {
-    background: var(--lmx0-background);
+    background-color: #f7f9fe;
+    border-bottom: var(--style-border);
     transition: 0.1s;
   }
 }
@@ -487,7 +493,7 @@ center#name-container {
 }
 
 #page-header.nav-fixed #nav a:hover, #page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover {
-  color: #ffffff !important;
+  color: #f7f9fe !important;
 }
 
 #page-header #nav #nav-group {
@@ -562,4 +568,15 @@ center#name-container {
 
 #sidebar-menus > div.menus_items > div:nth-child > a {
   left:5px;
+}
+#nav {
+  box-shadow: none;
+  background-color: #f7f9fe;
+  border-bottom: var(--style-border);
+}
+
+#page-header.nav-fixed #nav {
+  columns: #f7f9fe !important;
+  box-shadow: none !important;
+  border: var(--style-border);
 }

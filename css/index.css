@@ -1331,8 +1331,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a1acf7;
-  --hr-before-color: #7b8bf4;
+  --hr-border: #dcccbb;
+  --hr-before-color: #cdb7a0;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -2692,6 +2692,16 @@ figure.highlight pre .javascript .function {
   max-height: 350px;
   height: auto;
   width: 100%;
+/*
+      .recent-post-arrow
+        display block
+        background var(--article-content-bgcolor)
+        position absolute
+        height 10px
+        width 20px
+        clip-path polygon(0 0,100% 0,50% 100%)
+        top 20px
+        */
 }
 .recent-posts .recent-post-item .recent-post-content .recent-post-cover {
   width: 100%;
@@ -2727,7 +2737,7 @@ figure.highlight pre .javascript .function {
   position: absolute;
   height: 200px;
   width: 100%;
-  background: rgba(25,25,25,0.4);
+  background: rgba(25,25,25,0.15);
   clip-path: polygon(0 130px, 0 0, 100% 0, 100% 130px, 50% 100%);
 }
 .recent-posts .recent-post-item .recent-post-content .article-content .article-content-text {
@@ -2742,15 +2752,6 @@ figure.highlight pre .javascript .function {
 .recent-posts .recent-post-item .recent-post-content .article-content .article-content-text::after {
   content: "」";
   font-size: 20px;
-}
-.recent-posts .recent-post-item .recent-post-content .recent-post-arrow {
-  display: block;
-  background: var(--article-content-bgcolor);
-  position: absolute;
-  height: 10px;
-  width: 20px;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  top: 20px;
 }
 @media screen and (min-width: 1069px) {
   .recent-posts .recent-post-item {

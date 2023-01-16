@@ -4216,14 +4216,5 @@ a.categoryButton:hover {
   display: none;
 }
 
-li{
-  counter-increment: number;
-}
 
-#posts-chart {
-  margin: 0 auto !important;
-}
 
-div#menus {
-  z-index: 999;
-}

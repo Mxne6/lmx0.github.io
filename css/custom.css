@@ -1211,9 +1211,6 @@ svg.icon {
 b, strong {
   color: var(--lmx0-theme);
 }
-#article-container p {
-  margin: 0 0 16px !important;
-}
 
 /* 文章中的超链接 */
 #article-container a {
@@ -1250,7 +1247,7 @@ b, strong {
 }
 
 #article-container p {
-  margin: 0rem 0;
+  margin: 1rem 0;
   text-align: left;
   letter-spacing: 0.6px;
 }
@@ -1786,41 +1783,6 @@ svg.icon.faa-tada {
 }
 
 
-/* 评论表情包放大-------- */
-#owo-big {
-  position: fixed;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border: 1px #aaa solid;
-  border-radius: 10px;
-  z-index: 9999;
-  display: none;
-  transform: translate(0, -105%);
-  overflow: hidden;
-  animation: owoIn 0.3s cubic-bezier(0.42, 0, 0.3, 1.11);
-}
-
-[data-theme=dark] #owo-big {
-  background-color: #4a4a4a
-}
-
-#owo-big img {
-  width: 100%;
-}
-/* 动画效果代码由 lmx0：https://blog.zhlmx0.com/ 提供 */
-@keyframes owoIn {
-  0% {
-      transform: translate(0, -95%);
-      opacity: 0;
-  }
-  100% {
-      transform: translate(0, -105%);
-      opacity: 1;
-  }
-}
-/* end-------- */
-
-
 /* 右边按钮阅读进度---------- */
 /* 返回顶部 */
 button#go-up #percent {
@@ -2322,21 +2284,21 @@ button#go-up:hover #percent {
   margin-top: -20px;
 }
 .author-content.author-content-item.essayPage {
-  background: url(https://w.wallhaven.cc/full/q2/wallhaven-q21rjr.jpg) left 50% / cover no-repeat;
+  background: url(https://s1.vika.cn/space/2023/01/16/d53c92b13d3f47cf96f6359f4108ca8a) left 50% / cover no-repeat;
 }
 
 .author-content.author-content-item.fcirclePage {
-  background: url(https://w.wallhaven.cc/full/l8/wallhaven-l836k2.jpg) left 50% / cover no-repeat;
+  background: url(https://s1.vika.cn/space/2023/01/16/f51dbf4805914c058ad58882478c9474) left 50% / cover no-repeat;
 }
 
 .author-content.author-content-item.flinkPage {
-  background: url(https://w.wallhaven.cc/full/5g/wallhaven-5gwvz5.jpg) left 50% / cover no-repeat;
+  background: url(https://s1.vika.cn/space/2023/01/16/37ce9fda546e460ca5e6b5f031924ffe) left 50% / cover no-repeat;
 }
 .author-content.author-content-item.timePage {
-  background: url(https://w.wallhaven.cc/full/5g/wallhaven-5gwvz5.jpg) left 50% / cover no-repeat;
+  background: url(https://s1.vika.cn/space/2023/01/16/a47cff0ec8724c5c82641c3e66dba9c3) left 90% / cover no-repeat;
 }
 .author-content.author-content-item.starsPage {
-  background: url(https://w.wallhaven.cc/full/5g/wallhaven-5gwvz5.jpg) left 50% / cover no-repeat;
+  background: url(https://s1.vika.cn/space/2023/01/16/f51dbf4805914c058ad58882478c9474) left 50% / cover no-repeat;
 }
 
 .banner-button-group .banner-button{
@@ -4256,4 +4218,8 @@ a.categoryButton:hover {
 
 li{
   counter-increment: number;
+}
+
+#posts-chart {
+  margin: 0 auto !important;
 }

@@ -34,13 +34,7 @@
   transition: 0.3s;
 }
 
-ul,
-li {
-  list-style: none;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+
 
 #bbTimeList {
   background: var(--lmx0-none);

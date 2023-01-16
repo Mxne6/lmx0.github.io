@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lmx0.top/categories/index.html</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lmx0.top/tags/index.html</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lmx0.top/comments/index.html</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lmx0.top/time/index.html</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -21,15 +48,6 @@
   
   <url>
     <loc>https://lmx0.top/stars/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lmx0.top/comments/index.html</loc>
     
     <lastmod>2023-01-15</lastmod>
     
@@ -284,24 +302,6 @@
     <loc>https://lmx0.top/gallery/index.html</loc>
     
     <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lmx0.top/tags/index.html</loc>
-    
-    <lastmod>2023-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lmx0.top/categories/index.html</loc>
-    
-    <lastmod>2023-01-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -143,6 +143,7 @@
   backdrop-filter: var(--backdrop-filter);
   border-radius: 12px;
   border: var(--border-style);
+  box-shadow: none !important;
 }
 @media screen and (min-width: 901px){}
 #aside-content #card-toc {
@@ -1299,7 +1300,7 @@ blockquote{
 }
 
 #aside-content .card-widget:hover {
-  box-shadow: var(--lmx0-shadow-border);
+  border: var(--style-border-hover);
 }
 
 #aside-content #card-funds {

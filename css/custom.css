@@ -2167,7 +2167,7 @@ button#go-up:hover #percent {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--lmx0-card-bg);
+  /* background: var(--lmx0-card-bg); */
   box-shadow: var(--lmx0-shadow-border);
   margin-right: 2%;
 }

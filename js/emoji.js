@@ -1,1 +1,89 @@
-function owoBig(){let e=1,t="",o=document.createElement("div"),n=document.querySelector("body");o.id="owo-big",n.appendChild(o),new MutationObserver((i=>{for(let d=0;d<i.length;d++){let a=i[d].addedNodes,l="";2==a.length&&"OwO-body"==a[1].className&&(l=a[1],document.body.clientWidth<=768&&l.addEventListener("contextmenu",(e=>e.preventDefault())),l.onmouseover=i=>{e&&"IMG"==i.target.tagName&&(e=0,t=setTimeout((()=>{let e=3*i.path[0].clientHeight,t=3*i.path[0].clientWidth,d=i.x-i.offsetX-(t-i.path[0].clientWidth)/2,a=i.y-i.offsetY;d+t>n.clientWidth&&(d-=d+t-n.clientWidth+10),d<0&&(d=10),o.style.cssText=`display:flex; height:${e}px; width:${t}px; left:${d}px; top:${a}px;`,o.innerHTML=`<img src="${i.target.src}">`}),300))},l.onmouseout=()=>{o.style.display="none",e=1,clearTimeout(t)})}})).observe(document.getElementById("post-comment"),{subtree:!0,childList:!0})}document.getElementById("post-comment")&&owoBig();var getTimeState=()=>{var e=(new Date).getHours(),t="";return e>=0&&e<=5?t="晚安":e>5&&e<=10?t="早上好":e>10&&e<=14?t="中午好":e>14&&e<=18?t="下午好":e>18&&e<=24&&(t="晚上好"),t};function sayhi(){document.querySelector("#author-info__sayhi")&&(document.getElementById("author-info__sayhi").innerHTML=getTimeState()+"！我是")}sayhi();
+// 如果当前页有评论就执行函数
+if (document.getElementById('post-comment')) owoBig();
+// 表情放大
+function owoBig() {
+    let flag = 1, // 设置节流阀
+        owo_time = '', // 设置计时器
+        m = 3; // 设置放大倍数
+    // 创建盒子
+    let div = document.createElement('div'),
+        body = document.querySelector('body');
+    // 设置ID
+    div.id = 'owo-big';
+    // 插入盒子
+    body.appendChild(div)
+
+    // 构造observer
+    let observer = new MutationObserver(mutations => {
+
+        for (let i = 0; i < mutations.length; i++) {
+            let dom = mutations[i].addedNodes,
+                owo_body = '';
+            if (dom.length == 2 && dom[1].className == 'OwO-body') owo_body = dom[1];
+            // 如果需要在评论内容中启用此功能请解除下面的注释
+            // else if (dom.length == 1 && dom[0].className == 'tk-comment') owo_body = dom[0];
+            else continue;
+            
+            // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
+            if (document.body.clientWidth <= 768) owo_body.addEventListener('contextmenu', e => e.preventDefault());
+            // 鼠标移入
+            owo_body.onmouseover = (e) => {
+                    if (flag && e.target.tagName == 'IMG') {
+                        flag = 0;
+                        // 移入300毫秒后显示盒子
+                        owo_time = setTimeout(() => {
+                            let height = e.path[0].clientHeight * m, // 盒子高
+                                width = e.path[0].clientWidth * m, // 盒子宽
+                                left = (e.x - e.offsetX) - (width - e.path[0].clientWidth) / 2, // 盒子与屏幕左边距离
+                                top = e.y - e.offsetY; // 盒子与屏幕顶部距离
+
+                            if ((left + width) > body.clientWidth) left -= ((left + width) - body.clientWidth + 10); // 右边缘检测，防止超出屏幕
+                            if (left < 0) left = 10; // 左边缘检测，防止超出屏幕
+                            // 设置盒子样式
+                            div.style.cssText = `display:flex; height:${height}px; width:${width}px; left:${left}px; top:${top}px;`;
+                            // 在盒子中插入图片
+                            div.innerHTML = `<img src="${e.target.src}">`
+                        }, 300);
+                    }
+                };
+            // 鼠标移出隐藏盒子
+            owo_body.onmouseout = () => { div.style.display = 'none', flag = 1, clearTimeout(owo_time); }
+        }
+
+    })
+    observer.observe(document.getElementById('post-comment'), { subtree: true, childList: true }) // 监听的 元素 和 配置项
+}
+
+
+// 早上好问好
+// 获取时间
+var getTimeState = () => {
+    // 获取当前时间
+    var timeNow = new Date();
+    // 获取当前小时
+    var hours = timeNow.getHours();
+    // 设置默认文字
+    var text = ``;
+    // 判断当前时间段
+    if (hours >= 0 && hours <= 5) {
+      text = `晚安`;
+    } else if (hours > 5 && hours <= 10) {
+      text = `早上好`;
+    } else if (hours > 10 && hours <= 14) {
+      text = `中午好`;
+    } else if (hours > 14 && hours <= 18) {
+      text = `下午好`;
+    } else if (hours > 18 && hours <= 24) {
+      text = `晚上好`;
+    }
+    //    console.log(`hours >>>>>`, hours);
+    //    console.log(`text >>>>`, text);
+    // 返回当前时间段对应的状态
+    return text;
+  };  
+function sayhi() {
+    if (document.querySelector('#author-info__sayhi')){
+      document.getElementById("author-info__sayhi").innerHTML = getTimeState() + "！我是";
+    }
+  }
+sayhi();

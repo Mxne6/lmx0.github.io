@@ -1,1 +1,38 @@
-if(null==window.localStorage.getItem("fpson")||"1"==window.localStorage.getItem("fpson")){var rAF=window.requestAnimationFrame||window.webkitRequestAnimationFrame||function(e){window.setTimeout(e,1e3/60)},frame=0,allFrameCount=0,lastTime=Date.now(),lastFameTime=Date.now(),loop=function(){var e=Date.now(),t=e-lastFameTime,a=Math.round(1e3/t);if(lastFameTime=e,allFrameCount++,frame++,e>1e3+lastTime){a=Math.round(1e3*frame/(e-lastTime));document.getElementById("fps").innerHTML=`FPS:${a}`,frame=0,lastTime=e}rAF(loop)};loop()}else document.getElementById("fps").style="display:none!important";
+if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
+    var rAF = function () {
+        return (
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            }
+        );
+    }();
+    var frame = 0;
+    var allFrameCount = 0;
+    var lastTime = Date.now();
+    var lastFameTime = Date.now();
+    var loop = function () {
+        var now = Date.now();
+        var fs = (now - lastFameTime);
+        var fps = Math.round(1000 / fs);
+
+        lastFameTime = now;
+        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
+        allFrameCount++;
+        frame++;
+
+        if (now > 1000 + lastTime) {
+            var fps = Math.round((frame * 1000) / (now - lastTime));
+            document.getElementById("fps").innerHTML = `FPS:${fps}`;
+            frame = 0;
+            lastTime = now;
+        };
+
+        rAF(loop);
+    }
+
+    loop();
+} else {
+    document.getElementById("fps").style = "display:none!important"
+}

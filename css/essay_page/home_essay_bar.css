@@ -1,1 +1,81 @@
-#bber-talk{width:100%;height:25px;line-height:25px;display:flex;flex-direction:column}#bbtalk{overflow:hidden;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#bber-talk .li-style{width:auto;max-width:100%;height:25px;text-align:center;overflow:hidden;text-overflow:ellipsis;transition:.3s;font-weight:700;margin:auto;cursor:pointer;white-space:nowrap}#bbTimeList .li-style:hover{color:var(--lmx0-theme);transition:.3s}#bbTimeList{background:var(--lmx0-none);color:var(--lmx0-fontcolor);padding:.5rem 1rem;border-radius:12px;box-shadow:var(--lmx0-shadow-lightblack);display:flex;transition:.3s;margin:0 auto;margin-bottom:1rem;border:var(--style-border);align-items:center;height:50px;width:100%;width:100%;max-width:1350px}#bbTimeList:hover{border:var(--style-border-hover);box-shadow:var(--lmx0-shadow-main)}@media screen and (min-width:1300px){#bbTimeList{margin-bottom:.5rem}}.bbTimeList .bber-logo{animation:rotate 1.6s linear infinite;cursor:pointer}.bber-gotobb{cursor:pointer}@media screen and (max-width:1400px){#bbTimeList{max-width:calc(100% - 40px)}}
+/* 主页哔哔bb */
+#bber-talk {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bbtalk {
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#bber-talk .li-style {
+  width: auto;
+  max-width: 100%;
+  height: 25px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#bbTimeList .li-style:hover {
+  color: var(--lmx0-theme);
+  transition: 0.3s;
+}
+
+
+
+#bbTimeList {
+  background: var(--lmx0-none);
+  color: var(--lmx0-fontcolor);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: var(--lmx0-shadow-lightblack);
+  display: flex;
+  transition: 0.3s;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border: var(--style-border);
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  width: 100%;
+  max-width: 1350px;
+}
+
+#bbTimeList:hover {
+  border: var(--style-border-hover);
+  box-shadow: var(--lmx0-shadow-main);
+}
+
+@media screen and (min-width: 1300px) {
+  #bbTimeList {
+    margin-bottom: .5rem;
+  }
+}
+
+.bbTimeList .bber-logo {
+  animation: rotate 1.6s linear infinite;
+  cursor: pointer;
+}
+
+.bber-gotobb {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px){
+  #bbTimeList {
+    max-width: calc(100% - 40px);
+}
+}
